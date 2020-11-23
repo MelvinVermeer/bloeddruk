@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 async function getAllTasks() {
-  const response = await fetch("/api/GetLocations?name=Melvin");
+  const response = await fetch("/api/GetLocations?name=Duncan");
   return await response.text();
 }
 
@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload!
         </p>
 
         {message ? <pre>{message}</pre> : <pre>loading...</pre>}
