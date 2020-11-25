@@ -1,17 +1,7 @@
-import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { MyMapComponent } from "./components/map/MyMapComponent";
 
-async function getAllTasks() {
-  const response = await fetch("/api/GetLocations?name=Duncan");
-  return await response.text();
-}
-
 function App() {
-  // const [message, setMessage] = useState("");
-  // getAllTasks().then((x) => setMessage(x));
-
   return (
     <div className="App">
       <MyMapComponent
